@@ -1,73 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header class="header">
-        <div class="header__container">
-            <div class="header__logo">
-                <img src="images/Group 19 2.png" alt="" class="logo__icon">
-            </div>
-            <nav class="nav">
-                <ul class="menu">
-                    <li class="menu__list"><a href="" class="menu__link">Главная</a></li>
-                    <li class="menu__list"><a href="" class="menu__link">Про гида</a></li>
-                    <li class="menu__list"><a href="" class="menu__link">Программа тура</a></li>
-                    <li class="menu__list"><a href="" class="menu__link">Стоимость</a></li>
-                    <li class="menu__list"><a href="" class="menu__link">Блог</a></li>
-                    <li class="menu__list"><a href="" class="menu__link">Контакты</a></li>
-                </ul>
-            </nav>
-            <button class="header__btn">Консультация</button>
+      <div class="header__container">
+        <div class="header__logo">
+          <img src="images/Group 19 2.png" alt="logo__icon" class="logo__icon" />
         </div>
+        <nav class="nav">
+          <ul class="menu">
+            <li class="menu__list">
+              <a href="" class="menu__link">Главная</a>
+            </li>
+            <li class="menu__list">
+              <a href="" class="menu__link">Про гида</a>
+            </li>
+            <li class="menu__list">
+              <a href="" class="menu__link">Программа тура</a>
+            </li>
+            <li class="menu__list">
+              <a href="" class="menu__link">Стоимость</a>
+            </li>
+            <li class="menu__list"><a href="" class="menu__link">Блог</a></li>
+            <li class="menu__list">
+              <a href="" class="menu__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__btn">Консультация</button>
+      </div>
     </header>
     <main class="main">
-		<section class="section1">
-			<div class="section1__container">
-				<h1 class="section1__title">Насладись прогулкой в горах
-					с командой единомышленников</h1>
-				<div class="section1__form">
-					<form action="" class="section1__form">
-						<div class="location__item">
-							<div class="location__elem" id="location__elem">
-								1
+      <section class="section1">
+        <div class="section1__container">
+          <h1 class="section1__title">
+            Насладись прогулкой в горах с командой единомышленников
+          </h1>
+          <div class="section1__form">
+            <form action="" class="section1__form">
+              <div class="location__item">
+                <table  class="location__table" >
+						  <tr>
+							  <td class="location__elem">
+								  <h3  onclick="changeValue()">Россия</h3>
+								</td>
+							</tr>
+							<tr>
+								<td class="location__elem">
+									<h3  onclick="changeValue()">Великобритания</h3>
+								</td>
+                  </tr>
+                  <tr>
+                    <td class="location__elem">
+							<h3  onclick="changeValue()">США</h3>
+						  </td>
+                  </tr>
+					</table>
+							<div class="first__item" onclick="openList()">
+							 <h3 class="item__text"  onclick="changeValue()">Локация для тура</h3>
+							 <img src="images/ep_arrow-down.png" class="open__icon" alt="icon">
 							</div>
-							<div class="location__elem">
-								2
-							</div>
-							<div class="location__elem">
-								2
-							</div>
-							<div class="location__elem">
-								2
-							</div>
-							<div class="location__elem">
-								2
-							</div>
-							<div class="label__text"></div>
-						</div>
-						<div class="date__inp">
-							<input type="date" class="date__inp">
-							<label for="date__inp"></label>
-						</div>
-						<div class="count__item">
-							<div class="count__elem">
+						
+					 	
+                </div>
 
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-		</section>
-	
+              <div class="date__inp">
+                <input type="date" class="date__inp" />
+
+                <label class="label1" for="date__inp">укажите диапазон</label>
+              </div>
+              <div class="count__item">
+					<table  class="count__table" >
+						 <tr>
+							 <td class="count__elem">
+								 <h3  onclick="countValue()">4</h3>
+							  </td>
+						  </tr>
+						  <tr>
+							  <td class="count__elem">
+								  <h3  onclick="countValue()">5</h3>
+							  </td>
+					  </tr>
+					  <tr>
+						 <td class="count__elem">
+						  <h3 onclick="countValue()">6</h3>
+						 </td>
+					  </tr>
+				  </table>
+						  <div class="first__item2" onclick="openCountList()">
+							<h3 class="item__text2">Участники</h3>
+							<img src="images/ep_arrow-down.png" class="open__icon" alt="icon">
+						  </div>
+					  
+
+					</div>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="footer">
-
-    </footer>
+    <footer class="footer"></footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
