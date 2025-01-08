@@ -1916,5 +1916,12 @@ transition: 1s;
 	font-size: 22px;
 	height: 0px;
 }
-
+.section6__titles{
+	height: 180px;
+	gap: 0;
+}
+.section6__title1{
+	height: 6px;
+	font-size: 20px;
+}
 }
